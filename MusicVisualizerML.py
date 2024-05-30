@@ -98,6 +98,10 @@ print(f"fc1.bias:\n{params['fc1.bias']}\n")
 print(f"fc2.weight:\n{params['fc2.weight']}\n")
 print(f"fc2.bias:\n{params['fc2.bias']}\n")
 
+print("Scale:", scaler.scale_)
+print("mean:", scaler.mean_)
+
+
 # Inference with the same data
 model.eval()
 with torch.no_grad():
